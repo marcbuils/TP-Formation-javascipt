@@ -1,0 +1,13 @@
+{
+  "name": "object-create",
+  "version": "0.0.0",
+  "description": "",
+  "main": "todo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "marc.buils <marc.buils@marcbuils.fr>",
+  "dependencies": {
+    "lodash": "~2.4.1"
+  }
+}

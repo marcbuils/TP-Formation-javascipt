@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Todo List</title>
+        <meta charset="utf-8" />
+
+        <script src="bootstrap.js"></script>
+        <link rel="stylesheet" href="todo.css" />
+    </head>
+    <body data-ng-app="todoApp">
+        <div>
+            <div data-ng-controller="TodoCtrl">
+                <h3>Todo List :</h3>
+                {{tasksRemaining().length}} of {{dataTodo.todos.length}} task{{tasksRemaining().length > 1 ? 's aren' : ' isn'}}'t done
+                <ul>
+                    <li data-ng-repeat="todo in dataTodo.todos">
+                        <input type="checkbox" data-ng-model="todo.done" data-ng-change="update(todo)" /> <span data-ng-class="{ 'task-done': todo.done }">{{todo.description}}</span> <button data-ng-click="remove(todo)">X</button>
+                    </li>
+                </ul>
+
+                Add a new task:
+                <form data-ng-submit="add()">
+                    <input data-ng-model="description" /><button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
