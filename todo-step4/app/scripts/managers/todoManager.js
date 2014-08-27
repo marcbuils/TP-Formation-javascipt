@@ -1,7 +1,9 @@
+'use strict';
+
 var _ = require('lodash');
-var manager = null;
 var Client = require('node-rest-client').Client;
 var events = require('events');
+var manager;
 
 manager = {
     BASE_URL: window.location.origin + '/api/todo',

@@ -1,3 +1,5 @@
+'use strict';
+
 var express = require('express');
 var _ = require('lodash');
 var bodyParser = require('body-parser');
@@ -16,9 +18,8 @@ server = {
         app.use('/dev', express.static(__dirname + '/../dev'));
         app.use('/api', api.app);
 
-        app.use(function (req, res, next) {
-            //res.redirect('/dev/todo.html');
-            next();
+        app.use(function (req, res) {
+            res.redirect('/dev/todo.html');
         });
 
         app.listen(3000);

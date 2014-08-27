@@ -1,3 +1,5 @@
+'use strict';
+
 var _ = require('lodash');
 var todoManager = require('../managers/todoManager');
 

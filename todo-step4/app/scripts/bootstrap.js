@@ -1,3 +1,5 @@
+'use strict';
+
 var app = require('./app');
 var todoCtrl = require('./controllers/todoCtrl');
 

@@ -1,3 +1,5 @@
+'use strict';
+
 var express = require('express');
 var todo = require('./api/todo');
 var api;

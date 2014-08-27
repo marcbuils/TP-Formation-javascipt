@@ -1,3 +1,5 @@
+'use strict';
+
 var _ = require('lodash');
 var uuid = require('node-uuid');
 var express = require('express');
